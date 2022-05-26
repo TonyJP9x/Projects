@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Tracer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Description -->
+        <div class ="title">
+            <h1>Todo Tracer</h1>
+        </div>  
+        <div class = "container" >
+            <form action="" id="form">
+                <div class = "input-group">
+                    <h4 class="text">Description</h4> 
+                    <input type="text" class="form-control" placeholder="Describe the issue..." id ="description">
+                    <h4 class="text">Author</h4> 
+                    <input type="text" class="form-control" placeholder="   " id ="author" class="author">
+                </div>
+<!-- severity -->
+                <div class = "input-group">
+                    <h4 class="text">Severity</h4> 
+                    <select name="" class="form-control" id="severity-option">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class= "submit-button">
+                    <button  id="create" type="submit" class="add-button" onclick="displayLoading()">Add</button>
+                </div>
+            </form>
+            <hr>
+<!-- search -->
+            <div class="listTodo">
+                <div class="search-by">
+                    <div id="list-todo" >
+                        <h3>List Todo</h3>
+                    </div>
+                    <form id="search">
+                        <input id="search-form" class="form-control" type="text" placeholder="Search by description">  
+                    </form>
+                </div>
+<!-- status -->
+                <div class="row">
+                    <div class="col-2">Filter:</div>
+                    <div class="col-10">
+                        <form action="" id="form-status">
+                            <button class="button" id="btn-all"  value = "all" type="button">All</button>
+                            <button class="button" id = "btn-open" value = "open" type="button">Open</button>
+                            <button class="button" id ="btn-hide" value = "close" type="button">Close</button>
+                        </form>
+                    </div>
+                   
+                </div>
+<!-- Order By -->
+                <div class="row">
+                    <div class="col-2">Order By:</div>
+                    <select name="" class="form-control" id="order-by">
+                        <option value = "1" >ASC</option>
+                        <option value = "-1">DESC</option>
+                    </select>
+                   
+                </div>
+<!-- issue List -->
+                <div id="issueList" class="issueList">
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="model model-show">
+            <div class="modelInput">        
+                <img class="cross-icon" onclick="deleteModel()" src="cross-icon.svg" alt="crossIcon">
+                <p>EDIT FORM</p>
+                <form action="" id="form" class="form-size">
+                    <div class = "input-group">
+                        <h4 class="text">Description</h4> 
+                        <input type="text" class="form-control" placeholder="Describe the issue..." id ="description-model">
+                        <h4 class="text">Author</h4> 
+                        <input type="text" class="form-control" placeholder="   " id ="author-model" class="author">
+                    </div>
+    <!-- severity -->
+                    <div class = "input-group">
+                        <h4 class="text">Severity</h4> 
+                        <select name="" class="form-control" id="severity-option-model">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div class= "submit-button">
+                        <button  id="btnUpdate-model"  type="submit" class="add-button">Update</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="loadingIcon display">
+            <div class="loading">
+            
+            </div>
+        </div>
+        
+<script src="api.js"></script>
+
+</body>
+</html>
+
+
+
