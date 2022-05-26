@@ -1,0 +1,69 @@
+/* PC */
+@media (min-width: 1024px){
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){ 
+
+}
+
+
+/* Mobile */
+@media (max-width: 740px){
+
+    .header{
+        height: auto;
+        overflow: hidden;
+    }
+    .button{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .nav-menu, a{
+        width: 100%;
+        display: block;
+    }   
+    .search-icon{
+        display:none;
+        
+    }
+    .bars-icon{
+        display: block;
+    }
+    .nav-more-option >li{
+        width: 1000px;
+    }
+    .member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .member-order, img{
+        width: 100%;
+     
+    }
+    .buy-ticket{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buy-ticket .places{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .class{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inform button{
+        width: 96%;
+        
+    }
+    

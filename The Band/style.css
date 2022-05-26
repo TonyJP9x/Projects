@@ -1,0 +1,430 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main{
+    max-width:100%;
+    height:1500px;
+
+}
+
+.header{
+    width:100%;
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+
+
+}
+.button{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 15px;
+    flex-direction: row;
+
+}
+
+.navBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+span.navBtn{
+   padding: 12px 24px;
+   line-height: 22.5px;
+}
+span.navBtn:hover{
+    cursor: pointer;
+    background-color: #ddd;
+    color: #000;
+ }
+.search-icon{
+    padding: 12px 24px;
+    float: right;
+    margin-top: -43.5px;
+    color: #fff;
+}
+.search-icon:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.bars-icon{
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: none;
+}
+.bars-icon:hover{
+    background-color: #aaa;
+    color: #000;
+    cursor: pointer;
+    
+}
+.more{
+    position: relative;
+
+}
+.nav-more-option{
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    list-style-type: none;
+    background-color: #fff;
+    display: none;
+
+}
+.more:hover .nav-more-option{
+    display: block;
+}
+
+li{
+    padding: 10px 24px;
+    
+}
+li:hover{
+    background-color: #ddd;
+}
+.banner{
+    position: relative;
+    z-index: -1;
+    top: 46px;
+
+}
+.image{
+    font-size: 0px;
+}
+.slogan{
+    position: absolute;
+    color: #fff;
+    bottom:30px;
+    width: 100%;
+}
+.slogan h2, p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+img{
+    width: 100%;
+    
+}
+
+.class{
+    width:80%;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+h1{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+p{
+    margin: 15px 0px;
+    text-align: justify;
+}
+.member{
+    padding-top:32px;
+    padding-bottom: 32px;    
+}
+.member-order{
+    float: left;
+    width: calc(100%/3);
+    text-align:center;
+}
+.member-order img{
+    width: 154px;
+ 
+}
+.clear{
+    clear: both;
+}
+.theBand{
+    text-align: center;
+}
+.tour{
+    background-color: black;
+}
+.tour h1{
+    color:#fff;
+}
+.ticket-box{
+    width:100%;
+    background-color: #fff;
+    margin-top:30px;
+}
+.ticket-box li{
+    border-bottom: 1px solid #ddd;
+    padding-left: 16px;
+}
+.ticket-box .sold-out{
+    margin-left: 16px;
+    padding: 0px 8px;
+    background-color: red;
+    color: #fff;
+
+}
+.ticket-box .quantity{
+    color: #fff;
+    background-color: #000;
+    float: right;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-ticket{
+    padding: 32px 0px;
+    margin: 0px -8px;
+}
+.buy-ticket .places{
+    float: left;
+    width: calc(100%/3);
+    padding: 0px 8px;
+}
+.places img:hover{
+    opacity: 0.5;
+}
+.places img{
+    display: block;
+}
+.inform{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.inform .places, .time, .description{
+    width: 100%;
+    text-align: justify;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+}
+.inform .places{
+    font-weight: 700;
+}
+
+.inform .time{
+    color: #aaa;
+    font-weight: 100;
+}
+.inform button{
+    width: 107px;
+    height: 39px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+.inform button:hover{
+    background-color: #aaa;
+    color: black;
+    cursor: pointer;
+}
+.inform .button{
+    margin-left: 16px;
+}
+.contact-infor, .input-user{
+    width: 50%;
+    float: left;
+    padding: 32px 0px;
+
+}
+.contact-infor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-infor i{
+    padding-right: 10px;
+}
+.input-user input{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.input-control{
+    display: flex;
+    justify-content: space-between;
+}
+.input-control .input1, .input2{
+    width:48%;
+}
+
+.message{
+    width: 100%;
+    margin-top: 10px;
+}
+.submit-btn{
+    float: right;
+    margin: 16px 0px;
+}
+.input-user button{
+    padding: 8px 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: black;
+    border: none;
+    
+}
+.input-user button:hover{
+    cursor: pointer;
+    background-color: #aaa;
+    color: #000;
+}
+.footer{
+    padding: 64px 16px;
+}
+.footer .icon{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    
+}
+.footer li{
+    padding: 12px;
+    background-color: #fff;
+}
+.footer i{
+    font-size: 30px;
+}
+.footer i:hover{
+    opacity: 0.5;
+}
+.footer-slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p,a{
+    color: #aaa;
+    font-weight: 100;
+    display: inline-block;
+}
+.footer a{
+    margin-left: 5px;
+}
+.footer a:hover{
+    color: blue;
+}
+
+.ticket-modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(143, 143, 143, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.showModal{
+    display:none;
+}
+.box{
+    width: 70%;
+    background-color:#fff;
+
+}
+
+.tickets{
+    width:100%;
+    height: 100px;
+    background-color: #009688;
+    margin-top: -10px;
+    color: #fff;
+    position: relative;
+}
+.tickets img{
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   padding: 5px;
+
+}
+.tickets img:hover{
+    background-color: #015048;
+    cursor: pointer;
+}
+.tickets h1{
+    height:100%;
+    align-items: center;
+}
+.input-field{
+    padding: 10px 15px;
+
+}
+.field > p{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.field > input{
+    width: 100%;
+    height: 40px;
+}
+.input-field .payment{
+    width: 100%;
+    height: 40px;
+
+}
+.input-field .payment{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0px;
+    background-color: #009688 ;
+    border: none;
+    color: #fff;  
+    font-weight: bold;  
+}
+.input-field .payment:hover{
+    cursor: pointer; 
+    background-color: #aaa;
+    color: #000;
+}
+
+
+.input-field .close-btn{
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    font-weight: bolder;
+}
+.input-field .close-btn:hover{
+    color: #000;
+    cursor: pointer;
+    background-color: #aaa;
+}
+.input-field .text{
+    float: right;   
+}
+.text >a{
+    color:#009688;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
